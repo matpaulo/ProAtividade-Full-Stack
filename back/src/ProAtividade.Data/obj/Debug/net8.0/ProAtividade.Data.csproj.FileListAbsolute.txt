@@ -1,0 +1,17 @@
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/bin/Debug/net8.0/ProAtividade.Data.deps.json
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/bin/Debug/net8.0/ProAtividade.Data.runtimeconfig.json
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/bin/Debug/net8.0/ProAtividade.Data.dll
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/bin/Debug/net8.0/ProAtividade.Data.pdb
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/bin/Debug/net8.0/ProAtividade.Domain.dll
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/bin/Debug/net8.0/ProAtividade.Domain.pdb
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.csproj.AssemblyReference.cache
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.AssemblyInfoInputs.cache
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.AssemblyInfo.cs
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.csproj.CoreCompileInputs.cache
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtivi.BB9E02E6.Up2Date
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.dll
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/refint/ProAtividade.Data.dll
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.pdb
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.genruntimeconfig.cache
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ref/ProAtividade.Data.dll
