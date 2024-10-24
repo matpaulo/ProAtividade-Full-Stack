@@ -18,28 +18,28 @@ namespace ProAtividade.Domain.Services
         }
         public async Task<Atividade> AdicionarAtividade(Atividade model)
         {   
-            if(await _atividadeRepo.PegaPorTituloAsync(model.Titulo) != null)
-                throw new Exception("Já existe uma atividade com esse título");
+            // if(await _atividadeRepo.PegaPorTituloAsync(model.Titulo) != null)
+            //     throw new Exception("Já existe uma atividade com esse título");
             if(await _atividadeRepo.PegaPorIdAsync(model.Id) == null)
             {
                 _atividadeRepo.Adicionar(model);
                 if(await _atividadeRepo.SalvarMudancasAsync())
                     return model;
             }
-            return null;
+            // return null;
+            throw new Exception("Erro ao adicionar título");
         }
 
         public async Task<Atividade> AtualizarAtividade(Atividade model)
         {
-            if(model.DataConclusao != null)
-                throw new Exception("Não se pode alterar atividade já concluída");
             if(await _atividadeRepo.PegaPorIdAsync(model.Id) == null)
             {
                 _atividadeRepo.Atualizar(model);
                 if(await _atividadeRepo.SalvarMudancasAsync())
                     return model;
             }
-            return null;
+            // return null;
+            throw new Exception("Erro ao adicionar atualizar atividade");;
         }
 
         public async Task<bool> ConcluirAtividade(Atividade model)
@@ -65,11 +65,11 @@ namespace ProAtividade.Domain.Services
         {
             try
             {
-                var atividade = await _atividadeRepo.PegaPorIdAsync(atividadeId);
-                if (atividade == null) return null;
+                var atividade = await _atividadeRepo.PegaPorIdAsync(atividadeId) 
+                    ?? throw new Exception($"Atividade com o ID {atividadeId} não encontrada.");
                 return atividade;
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -80,10 +80,9 @@ namespace ProAtividade.Domain.Services
             try
             {
                 var atividades = await _atividadeRepo.PegaTodasAsync();
-                if (atividades == null) return null;
-                return atividades;
+                return atividades ?? [];
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {   
                 throw new Exception(ex.Message);
             }
