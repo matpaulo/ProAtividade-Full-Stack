@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProAtividade.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a53cfa44d501effe62148d97b2a3b14c3a43dfef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9784e91f82e339e3cc1c0ec4d1605955e746ae20")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProAtividade.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProAtividade.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
