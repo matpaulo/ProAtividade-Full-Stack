@@ -15,3 +15,4 @@
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.pdb
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.genruntimeconfig.cache
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ref/ProAtividade.Data.dll
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Data/obj/Debug/net8.0/ProAtividade.Data.sourcelink.json

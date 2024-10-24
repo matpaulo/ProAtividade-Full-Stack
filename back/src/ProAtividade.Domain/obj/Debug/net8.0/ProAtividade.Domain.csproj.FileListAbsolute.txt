@@ -9,3 +9,4 @@
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Domain/obj/Debug/net8.0/refint/ProAtividade.Domain.dll
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Domain/obj/Debug/net8.0/ProAtividade.Domain.pdb
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Domain/obj/Debug/net8.0/ref/ProAtividade.Domain.dll
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.Domain/obj/Debug/net8.0/ProAtividade.Domain.sourcelink.json

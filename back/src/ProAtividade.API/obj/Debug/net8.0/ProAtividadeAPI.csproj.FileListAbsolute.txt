@@ -311,3 +311,4 @@
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.API/obj/Debug/net8.0/ProAtividadeAPI.pdb
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.API/obj/Debug/net8.0/ProAtividadeAPI.genruntimeconfig.cache
 /Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.API/obj/Debug/net8.0/ref/ProAtividadeAPI.dll
+/Users/matheus/Desktop/REACT_ASPNETCORE/back/src/ProAtividade.API/obj/Debug/net8.0/ProAtividadeAPI.sourcelink.json
