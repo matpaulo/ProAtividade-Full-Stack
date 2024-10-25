@@ -3,14 +3,17 @@ import AtividadeInterface from './Pages/Atividades/AtividadeInterface';
 import ClientesInterface from './Pages/Clientes/ClientesInterface';
 import HomeInterface from './Pages/Home/HomeInterface';
 import ClienteForm from './Pages/Clientes/ClienteForm';
+import PageNotFound from './Pages/PageNotFound';
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomeInterface />} />
       <Route path="/clientes/lista" element={<ClientesInterface />} />
-      <Route path="/clientes/detalhes" element={<ClienteForm />} />
+      <Route path="/clientes/detalhes/:id?" element={<ClienteForm />} />
       <Route path="/atividades" element={<AtividadeInterface />} />
+      <Route path="/clientes/:id/atividades" element={<AtividadeInterface />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 }
