@@ -1,5 +1,9 @@
+import TitlePage from "../../components/TitlePage/TitlePage";
+
 export default function HomeInterface() {
   return (
-    <div>HomeInterface</div>
+    <>
+      <TitlePage title="Dashboard" />
+    </>
   )
 }

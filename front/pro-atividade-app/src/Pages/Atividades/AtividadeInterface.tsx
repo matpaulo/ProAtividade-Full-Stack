@@ -3,7 +3,10 @@ import api from '../../api/atividade'
 import AtividadeLista from './AtividadeLista';
 import ModalAtividade from '../../components/Modal/ModalAtividade';
 import ConfirmModal from '../../components/Modal/ConfirmModal';
-import TitlePage from './TitlePage';
+import TitlePage from '../../components/TitlePage/TitlePage';
+import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 interface Atividade {
   id: string;
@@ -111,27 +114,31 @@ export default function AtividadeInterface() {
 
   return (
     <>
-      <TitlePage novaAtividade={novaAtividade} />
-        <AtividadeLista
-          atividades={atividades}
-          pegarAtividade={pegarAtividade}
-          handleConfirmModal={handleConfirmModal}
-        />
-        <ModalAtividade
-          showAtividadeModal={showAtividadeModal}
-          handleAtividadeModal={handleAtividadeModal}
-          atividade={atividade}
-          addAtividade={addAtividade}
-          atualizarAtividade={atualizarAtividade}
-          cancelarAtividade={cancelarAtividade}
-          atividades={atividades}
-        />
-        <ConfirmModal
-          smShowConfirmModal={smShowConfirmModal}
-          handleConfirmModal={handleConfirmModal}
-          atividade={atividade}
-          deleteAtividade={deleteAtividade}
-        />
+      <TitlePage title="Atividade">
+        <Button variant="outline-secondary" onClick={novaAtividade}>
+          <FontAwesomeIcon icon={faPlus}/>
+        </Button>
+      </TitlePage>
+      <AtividadeLista
+        atividades={atividades}
+        pegarAtividade={pegarAtividade}
+        handleConfirmModal={handleConfirmModal}
+      />
+      <ModalAtividade
+        showAtividadeModal={showAtividadeModal}
+        handleAtividadeModal={handleAtividadeModal}
+        atividade={atividade}
+        addAtividade={addAtividade}
+        atualizarAtividade={atualizarAtividade}
+        cancelarAtividade={cancelarAtividade}
+        atividades={atividades}
+      />
+      <ConfirmModal
+        smShowConfirmModal={smShowConfirmModal}
+        handleConfirmModal={handleConfirmModal}
+        atividade={atividade}
+        deleteAtividade={deleteAtividade}
+      />
     </>
   );
 }

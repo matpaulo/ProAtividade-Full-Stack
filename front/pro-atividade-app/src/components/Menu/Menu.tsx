@@ -15,7 +15,7 @@ export default function Menu() {
           <Navbar.Toggle aria-controls="basic-navbar-nav"   />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={NavLink} to='/clientes'>Clientes</Nav.Link>
+              <Nav.Link as={NavLink} to='/clientes/lista'>Clientes</Nav.Link>
               <Nav.Link as={NavLink} to='/atividades'>Atividades</Nav.Link>
             </Nav>
             <Nav>

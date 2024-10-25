@@ -1,5 +1,9 @@
-export const ClientesInterface = () => {
+import ClienteLista from "./ClienteLista"
+
+export default function ClientesInterface() {
   return (
-    <div>ClientesInterface</div>
+    <>
+      <ClienteLista />
+    </>
   )
 }
