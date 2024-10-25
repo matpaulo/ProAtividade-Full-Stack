@@ -1,5 +1,5 @@
 import { Modal } from "react-bootstrap"
-import AtividadeForm from "../Atividade/AtividadeForm"
+import AtividadeForm from "../Pages/Atividades/AtividadeForm"
 
 interface Props {
     showAtividadeModal?: any

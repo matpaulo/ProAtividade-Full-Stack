@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
-import AtividadeLista from './components/Atividade/AtividadeLista';
-import api from './api/atividade';
-import { Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ModalAtividade from './components/Modals/ModalAtividade';
-import ConfirmModal from './components/Modals/ConfirmModal';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import api from './api/atividade'
+import AtividadeLista from './Pages/Atividades/AtividadeLista';
+import ModalAtividade from './components/ModalAtividade';
+import ConfirmModal from './components/ConfirmModal';
+import TitlePage from './Pages/Atividades/TitlePage';
 
 interface Atividade {
   id: string;
@@ -113,14 +111,7 @@ function App() {
 
   return (
     <>
-      <div 
-        className="d-flex justify-content-between align-items-end 
-        mt-2 pb-3 border-bottom border-1">
-        <h1 className='m-0 p-0'>Atividade</h1>
-        <Button variant="outline-secondary" onClick={novaAtividade}>
-          <FontAwesomeIcon icon={faPlus}/>
-        </Button>
-      </div>
+      <TitlePage novaAtividade={novaAtividade} />
         <AtividadeLista
           atividades={atividades}
           pegarAtividade={pegarAtividade}
