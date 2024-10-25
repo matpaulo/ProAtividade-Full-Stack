@@ -5,7 +5,7 @@ using ProAtividade.Domain.Interfaces.Repositories;
 
 namespace ProAtividade.Data.Repositories
 {
-    public class AtividadeRepo : GeralRepo, IAtividadeRepo // herda as caracterias de ambas
+    public class AtividadeRepo : GeralRepo, IAtividadeRepo
     {
         private readonly DataContext _context;
         public AtividadeRepo(DataContext context) : base(context)
@@ -16,28 +16,30 @@ namespace ProAtividade.Data.Repositories
         {
             IQueryable<Atividade> query = _context.Atividades;
             query = query.AsNoTracking()
-                            .OrderBy(ativ => ativ.Id)
-                            .Where(a => a.Id == id);
-            var atividadeId = await query.FirstOrDefaultAsync() ?? throw new Exception("Nenhum ID encontrado.");
-            return atividadeId;
+                         .OrderBy(ativ => ativ.Id)
+                         .Where(a => a.Id == id);
+            return await query.FirstOrDefaultAsync();
+        }
+
+        public Task<bool> PegaPorIdAsync(bool v)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<Atividade> PegaPorTituloAsync(string titulo)
         {
             IQueryable<Atividade> query = _context.Atividades;
+
             query = query.AsNoTracking()
-                            .OrderBy(ativ => ativ.Titulo)
-                            .Where(a => a.Titulo == titulo);
-            var atividadeTitulo = await query.FirstOrDefaultAsync() ?? throw new Exception("Nenhuma título encontrado.");
-            return atividadeTitulo;
+                         .OrderBy(ativ => ativ.Id);
+            return await query.FirstOrDefaultAsync(a => a.Titulo == titulo);
         }
         public async Task<Atividade[]> PegaTodasAsync()
         {
             IQueryable<Atividade> query = _context.Atividades;
             query = query.AsNoTracking()
-                            .OrderBy(ativ => ativ.Id);
-            var atividadeTodosOsId = await query.ToArrayAsync() ?? throw new Exception("Nenhuma conjunto de IDs encontrado.");
-            return atividadeTodosOsId;
+                         .OrderBy(ativ => ativ.Id);
+            return await query.ToArrayAsync();
         }
     }
 }

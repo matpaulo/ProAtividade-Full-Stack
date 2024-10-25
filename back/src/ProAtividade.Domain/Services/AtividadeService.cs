@@ -7,7 +7,7 @@ using ProAtividade.Domain.Interfaces.Services;
 
 namespace ProAtividade.Domain.Services
 {
-    public class AtividadeService : IAtividadeService
+        public class AtividadeService : IAtividadeService
     {
         private readonly IAtividadeRepo _atividadeRepo;
         
@@ -17,29 +17,27 @@ namespace ProAtividade.Domain.Services
             
         }
         public async Task<Atividade> AdicionarAtividade(Atividade model)
-        {   
-            // if(await _atividadeRepo.PegaPorTituloAsync(model.Titulo) != null)
-            //     throw new Exception("Já existe uma atividade com esse título");
+        {
             if(await _atividadeRepo.PegaPorIdAsync(model.Id) == null)
             {
                 _atividadeRepo.Adicionar(model);
                 if(await _atividadeRepo.SalvarMudancasAsync())
                     return model;
             }
-            // return null;
-            throw new Exception("Erro ao adicionar título");
+            throw new Exception("Erro ao adicionar atividade");
         }
 
         public async Task<Atividade> AtualizarAtividade(Atividade model)
         {
-            if(await _atividadeRepo.PegaPorIdAsync(model.Id) == null)
+            if(model.DataConclusao != null)
+                throw new Exception("Não se pode alterar uma atividade já concluida");
+            if(await _atividadeRepo.PegaPorIdAsync(model.Id) != null)
             {
                 _atividadeRepo.Atualizar(model);
                 if(await _atividadeRepo.SalvarMudancasAsync())
                     return model;
             }
-            // return null;
-            throw new Exception("Erro ao adicionar atualizar atividade");;
+            throw new Exception("Erro ao atualizar atividade");
         }
 
         public async Task<bool> ConcluirAtividade(Atividade model)
@@ -47,7 +45,7 @@ namespace ProAtividade.Domain.Services
             if(model != null)
             {
                 model.Concluir();
-                _atividadeRepo.Atualizar<Atividade>(model);
+                _atividadeRepo.Atualizar(model);
                 return await _atividadeRepo.SalvarMudancasAsync();
             }
             return false;

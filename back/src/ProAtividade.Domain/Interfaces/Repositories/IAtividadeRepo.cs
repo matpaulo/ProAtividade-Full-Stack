@@ -7,5 +7,6 @@ namespace ProAtividade.Domain.Interfaces.Repositories
         Task<Atividade[]> PegaTodasAsync(); //assinaturas
         Task<Atividade> PegaPorIdAsync(int id);
         Task<Atividade> PegaPorTituloAsync(string titulo);
+        Task<bool> PegaPorIdAsync(bool v);
     }
 }
