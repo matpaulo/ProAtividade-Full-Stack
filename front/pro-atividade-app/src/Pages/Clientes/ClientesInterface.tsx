@@ -1,9 +1,11 @@
-import ClienteLista from "./ClienteLista"
+import ClienteLista from "./ClienteLista";
 
-export default function ClientesInterface() {
+const ClientesInterface: React.FC = () => {
   return (
     <>
       <ClienteLista />
     </>
-  )
-}
+  );
+};
+
+export default ClientesInterface;
