@@ -86,7 +86,7 @@ const Atividade = () => {
   const closeConfirmModal = () => handleConfirmModal(0);
 
   return (
-    <>
+    <div className="container">
       <TitlePage
         title={"Atividade " + (atividade.id !== 0 ? atividade.id : "")}
       >
@@ -136,7 +136,7 @@ const Atividade = () => {
           </button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 };
 

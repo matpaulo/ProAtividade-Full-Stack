@@ -20,12 +20,10 @@ namespace ProAtividade.Data.Repositories
                          .Where(a => a.Id == id);
             return await query.FirstOrDefaultAsync();
         }
-
         public Task<bool> PegaPorIdAsync(bool v)
         {
             throw new NotImplementedException();
         }
-
         public async Task<Atividade> PegaPorTituloAsync(string titulo)
         {
             IQueryable<Atividade> query = _context.Atividades;

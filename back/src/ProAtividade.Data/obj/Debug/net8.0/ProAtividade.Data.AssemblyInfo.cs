@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProAtividade.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d3ef9df26eac805c492352ebb4c332457c9f5ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5707ed7e2c728c65bc82ed5093813d2df0fa5e9e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProAtividade.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProAtividade.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

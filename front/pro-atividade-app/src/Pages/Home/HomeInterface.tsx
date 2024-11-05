@@ -3,7 +3,7 @@ import TitlePage from "../../components/TitlePage";
 
 const HomeInterface: React.FC = () => {
   return (
-    <>
+    <div className="container">
       <TitlePage title="Dashboard" />
       <div className="mt-3">
         <Row>
@@ -49,7 +49,7 @@ const HomeInterface: React.FC = () => {
           </Col>
         </Row>
       </div>
-    </>
+    </div>
   );
 };
 

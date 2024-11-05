@@ -1,4 +1,5 @@
 import {
+  faFlorinSign,
   faGear,
   faRightFromBracket,
   faUser,
@@ -16,8 +17,9 @@ const Menu = () => {
     <>
       <Navbar expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand as={NavLink} to="/">
-            FSProject
+          <Navbar.Brand as={NavLink} to="/home">
+            <FontAwesomeIcon icon={faFlorinSign} className="me-2" />
+            FullStack
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -44,7 +46,7 @@ const Menu = () => {
                   Configurações
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/">
                   <FontAwesomeIcon icon={faRightFromBracket} className="me-2" />
                   Sair
                 </NavDropdown.Item>

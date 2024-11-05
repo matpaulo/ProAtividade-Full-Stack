@@ -5,7 +5,7 @@ using ProAtividade.Domain.Interfaces.Services;
 namespace ProAtividadeAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/login/[controller]")]
     public class AtividadeController : ControllerBase
     {
         private readonly IAtividadeService _atividadeService;
